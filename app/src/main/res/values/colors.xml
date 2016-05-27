@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 全局颜色 -->
+    <color name="cl_green">#00ff00</color>
+    <color name="cl_Green">#008000</color>
+    <color name="cl_black">#000000</color>
+    <color name="cl_white">#FFFFFF</color>
+    <color name="cl_gray">#DDDDDD</color>
+    <color name="cl_lightBlue">#5BCFE1</color>
+    <color name="cl_Blue">#5BCFE1</color>
+    <color name="cl_Blue_sc">#0000FF</color>
+    <color name="cl_Gray">#969899</color>
+    <color name="cl_Yellow">#FFFF00</color>
+    <color name="cl_Red">#FF0000</color>
+    <!--错题集-->
+    <color name="mc_green">#4CC538</color>
+    <color name="mc_white">#FFFFFF</color>
+    <color name="mc_black">#707070</color>
+</resources>
