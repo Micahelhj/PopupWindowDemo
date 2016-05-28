@@ -312,7 +312,6 @@ public class ScreenPopWindow extends PopupWindow implements PopupWindow.OnDismis
                         int tag = (int) (buttonView).getTag();
                         if (myItemClickListener != null)
                             myItemClickListener.onListItemIndexSelected(position, tag);
-                        ABToastUtils.showToast(context, "position====" + position + "\r\n index============" + (tag));
                     }
                     buttonView.setChecked(isChecked);
                     //noinspection deprecation

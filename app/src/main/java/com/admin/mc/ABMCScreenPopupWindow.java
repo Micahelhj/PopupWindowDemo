@@ -82,7 +82,7 @@ public class ABMCScreenPopupWindow {
      * @param textSize            默认单位（SP）
      * @param listString          显示的内容以分隔符分开的
      * @param splitType           字符串的分隔符
-     * @param myItemClickListener 事件传出的接口
+     * @param myItemClickListener 事件的传出接口
      */
     public void openPopupWindow(boolean isNewPopopWindow, final View baseView, int textSize, List<String> listString, String splitType, MyItemClickListener myItemClickListener) {
         openPopupWindow(isNewPopopWindow, baseView, textSize, listString, splitType, getMaxWidth(textSize, listString, splitType), LinearLayout.LayoutParams.WRAP_CONTENT, myItemClickListener);
@@ -98,7 +98,7 @@ public class ABMCScreenPopupWindow {
      * @param splitType           字符串的分隔符
      * @param baseViewWidth       popupwindow宽度
      * @param baseViewHeight      popupwindow高度
-     * @param myItemClickListener 事件传出的接口
+     * @param myItemClickListener 事件的传出接口
      */
     public void openPopupWindow(boolean isNewPopopWindow, final View baseView, int textSize, List<String> listString, String splitType, int baseViewWidth, int baseViewHeight, MyItemClickListener myItemClickListener) {
         this.textSize = textSize;

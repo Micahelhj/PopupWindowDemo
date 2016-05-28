@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.helo_word_0:
+                ABLogUtil.i("----------------------------case R.id.helo_word_0:");
                 ArrayList<String> list = new ArrayList<>();
                 list.add("年级:;全部;高一;高二;高三");
                 list.add("题型:;全部");
