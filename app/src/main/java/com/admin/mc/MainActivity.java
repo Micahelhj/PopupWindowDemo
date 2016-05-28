@@ -40,4 +40,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
+    @Override
+    protected void onDestroy() {
+//        ABMCScreenPopupWindow.getInstance(this).dismiss();
+        super.onDestroy();
+    }
 }

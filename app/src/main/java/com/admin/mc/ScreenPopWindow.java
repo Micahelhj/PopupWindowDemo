@@ -153,6 +153,7 @@ public class ScreenPopWindow extends PopupWindow implements PopupWindow.OnDismis
     private void showPopupWindow(View parent) {
         if (!this.isShowing()) {
             backgroundAlpha(0.8f);
+            //popupwindow位置控制  当前为停靠控件的正下方
             showAsDropDown(parent, parent.getWidth() / 2 - getWidth() / 2, 2);
         } else
             this.dismiss();
@@ -248,7 +249,7 @@ public class ScreenPopWindow extends PopupWindow implements PopupWindow.OnDismis
                 //TextView
                 viewHolder.tv_item = new TextView(context);
                 viewHolder.tv_item.setTextSize(textSize);
-                viewHolder.tv_item.setPadding(10, 5, 10, 5);
+                viewHolder.tv_item.setPadding(10, 3, 10, 3);
                 viewHolder.convertLayout.addView(viewHolder.tv_item);
                 //RadioGroup
                 viewHolder.group_item = new RadioGroup(context);

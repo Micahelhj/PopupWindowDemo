@@ -16,7 +16,8 @@ import static java.util.Collections.addAll;
 
 /**
  * 项目名称：MistakesCollection
- * 类描述：
+ * 类描述：popupwindow 控制类
+ * 横竖屏切换时需要调用#dimss()方法
  * 创建人：Michael-hj
  * 创建时间：2016/5/27  10:55
  * 修改人：Michael-hj
@@ -128,6 +129,15 @@ public class ABMCScreenPopupWindow {
     }
 
     /**
+     * 横竖屏切换时需要调用当前方法
+     * 关闭当前popupWindow
+     */
+    public void dismiss() {
+        if (mPopupWindow != null && mPopupWindow.isShowing())
+            mPopupWindow.dismiss();
+    }
+
+    /**
      * 获取最宽的一行的宽度
      *
      * @param textSize   字体大小
@@ -145,13 +155,8 @@ public class ABMCScreenPopupWindow {
                     ABLogUtil.e("it.getPopItemNames() == null");
                     continue;
                 }
-                int ww ;
-                String firstString = it.getPopItemNames().get(0);
-                String name = "";
-                if (firstString.contains(":"))
-                    name = firstString.substring(0, firstString.indexOf(":"));
-                ww = name.length() * tSize + ABTextUtil.getFontWidth(ABDensityUtil.sp2px(activity, textSize), ":") + ABDensityUtil.dip2px(activity, 10 * 2);//10位textView的padding
-                for (int i = 1; i < it.getPopItemNames().size(); i++) {
+                int ww = 0;
+                for (int i = 0; i < it.getPopItemNames().size(); i++) {
                     ww += it.getPopItemNames().get(i).length() * tSize + ABDensityUtil.dip2px(activity, 10 * 2);//10位radiobutton的padding
                 }
                 if (ww > MaxW) {
